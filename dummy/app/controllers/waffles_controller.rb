@@ -1,11 +1,11 @@
 class WafflesController < ApplicationController
 
-  def find_waffle_house
-    p "get all locations"
+  def index
+    @waffles = Waffles.all
   end
 
   def new
-    p "yummy waffles"
+    @waffles = Waffles.new
   end
 
 end
